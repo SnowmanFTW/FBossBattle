@@ -1,0 +1,10 @@
+main: me.snowman.fbossbattle.FBossBattle
+name: FBossBattle
+author: SnowmanFTW
+version: 1.0.0 BUILD 1
+
+commands:
+  bossbattle:
+    aliases: [bb]
+    description: Main comand for bossbattle
+    usage: /bossbattle
