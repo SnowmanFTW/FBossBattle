@@ -12,6 +12,13 @@ public class BossBattle implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         final String prefix = FBossBattle.messagesManager.getMessage("Prefix") + " ";
         if (args.length == 0) {
+            if (sender instanceof Player) {
+                FBossBattle.guiManager.openMainGUI((Player) sender);
+            }
+            return true;
+        }
+
+        if (args[0].equalsIgnoreCase("help")) {
             for (String message : FBossBattle.fileManager.getMessages().getStringList("Help")) {
                 sender.sendMessage(FBossBattle.messagesManager.color(message));
             }

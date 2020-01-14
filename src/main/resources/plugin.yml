@@ -1,7 +1,8 @@
 main: me.snowman.fbossbattle.FBossBattle
 name: FBossBattle
 author: SnowmanFTW
-version: 1.0.0 BUILD 1
+version: 1.0.0 BUILD 2
+api-version: 1.13
 
 commands:
   bossbattle:
